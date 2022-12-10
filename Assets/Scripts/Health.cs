@@ -75,7 +75,7 @@ public class Health : MonoBehaviour
         }
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i <= numOfHearts)
+            if ((i+1) <= numOfHearts)
             {
                 hearts[i].sprite = fullHeart;
             }
