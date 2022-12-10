@@ -15,9 +15,9 @@ public class CollisionDamage : MonoBehaviour
         if (coll.gameObject.tag == collisionTag)
         {
             anim.SetTrigger("hitTrigger");
-            /*anim.SetBool("isHitting", true);
+            /*anim.SetBool("isHitting", true);*/
             Health health = coll.gameObject.GetComponent<Health>();            
-            health.TakeHit(collisionDamage); */ 
+            health.TakeHit();
         }
         
     }
